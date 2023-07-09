@@ -57,7 +57,6 @@
     </a>
   </div>
 </template>
-<script src="https://kit.fontawesome.com/a478f7727a.js" crossorigin="anonymous"></script>
 <script setup>
 import { encodeData } from "../utils/transformer";
 const data = ref({
