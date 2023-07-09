@@ -27,14 +27,14 @@
           @click="prefillDemoData"
           class="h-12 flex items-center space-x-2 px-4 border-r text-xs font-medium bg-white text-slate-700"
         >
-          <span> Add demo data </span>
+          <span> Añadir datos aleatorios </span>
           <icon name="mdi:code-json" class="h-4 w-4" />
         </button>
         <button
           @click="publish"
           class="h-12 flex items-center space-x-2 px-4 border-r text-xs font-medium bg-white text-slate-700"
         >
-          <span> Publish </span>
+          <span> Publicar </span>
           <icon name="ph:paper-plane-tilt-bold" class="h-4 w-4" />
         </button>
         <a
@@ -49,15 +49,15 @@
     </div>
     <app-form-preview :data="data" />
     <a
-      href="https://twitter.com/fayazara"
+      href="https://drowkid.bswc.net"
       target="_blank"
       class="absolute bottom-0 right-0 bg-white rounded-tl-lg shadow px-4 py-1 font-medium text-sm text-gray-500"
     >
-      Made by Fayaz
+      <i class="fa-regular fa-copyright">Derechos Reservados by:</i> <a href="https://drowkid.bswc.net">DrowKid </a>
     </a>
   </div>
 </template>
-
+<script src="https://kit.fontawesome.com/a478f7727a.js" crossorigin="anonymous"></script>
 <script setup>
 import { encodeData } from "../utils/transformer";
 const data = ref({
@@ -78,23 +78,23 @@ const data = ref({
 
 const prefillDemoData = () => {
   data.value = {
-    n: "John Snow",
-    d: "I’m John Snow, the king in the north. I know Nothing.",
-    i: "https://i.insider.com/56743fad72f2c12a008b6cc0",
-    f: "https://www.facebook.com/john_snow",
-    t: "https://twitter.com/john_snow",
-    ig: "https://www.instagram.com/john_snow",
-    e: "mail@john_snow.cc",
-    gh: "https://github.com/john_snow",
-    tg: "https://t.me/john_snow",
+    n: "Lalo DrowKid",
+    d: "Hola, soy fan de la luna y de sus ojitos.",
+    i: "https://avatars.githubusercontent.com/u/127297730?v=4",
+    f: "https://www.facebook.com/drowkid01",
+    t: "https://twitter.com/",
+    ig: "https://www.instagram.com/lalo_01dk/",
+    e: "support@drowkid.bswc.net",
+    gh: "https://github.com/drowkid-1",
+    tg: "https://t.me/drowkid01",
     w: "+918888888888",
-    y: "https://youtube.com/@john_snow",
-    l: "https://linkedin.com/john_snow",
+    y: "https://youtube.com/@drowkid01",
+    l: "https://linkedin.com/",
     ls: [
       {
         l: "My Website",
         i: "ph:globe-duotone",
-        u: "https://example.com",
+        u: "https://drowkid.bswc.net",
       },
       {
         l: "Amazon wishlist",
